@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="466.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.comunications.telecomunicationsui.ProfileController">
+   <children>
+      <BorderPane prefHeight="437.0" prefWidth="641.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="175.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="slider" layoutX="-1.0" prefHeight="370.0" prefWidth="188.0" style="-fx-background-color: #8249C0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Pane prefHeight="154.0" prefWidth="176.0">
+                           <VBox.margin>
+                              <Insets bottom="-50.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fx:id="profilePicture" fitHeight="105.0" fitWidth="124.0" layoutX="34.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/profile.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="changePhotoButton" layoutX="34.0" layoutY="116.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #b159ff; -fx-background-radius: 30;" styleClass="textInf" stylesheets="@style.css" text="Change photo">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Button fx:id="backToDashboard" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#backToDasboard" prefHeight="35.0" prefWidth="192.0" styleClass="slideBarItems" stylesheets="@style2.css" text="Dashboard">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/dashboard.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="60.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="privacy" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#privacyAndPolicy" prefHeight="35.0" prefWidth="210.0" styleClass="slideBarItems" stylesheets="@style2.css" text=" Privacy Policy">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/privacy.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="slideBar4" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="203.0" styleClass="slideBarItems" stylesheets="@style2.css" text="Setings">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/settings.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="logout" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#toMain" prefHeight="35.0" prefWidth="290.0" styleClass="logout" stylesheets="@style2.css" text="Logout">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <Pane prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #350068FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#backToDasboard" prefHeight="24.0" prefWidth="25.0" styleClass="backButton" stylesheets="@style2.css">
+                     <graphic>
+                        <ImageView id="backButton" fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="495.0" layoutY="-3.0" prefHeight="17.0" prefWidth="154.0" text="FastTalking" textFill="#ffc6da">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #E6CBFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="122.0" styleClass="textInf" stylesheets="@style.css" text="Personal Data">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <Label prefHeight="34.0" prefWidth="122.0" styleClass="textInf" stylesheets="@style.css" text="Name">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="26.0" prefWidth="449.0" styleClass="search_bar" stylesheets="@style.css">
+                     <VBox.margin>
+                        <Insets left="190.0" right="40.0" top="-35.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="34.0" prefWidth="122.0" styleClass="textInf" stylesheets="@style.css" text="Username">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="26.0" prefWidth="449.0" styleClass="search_bar" stylesheets="@style.css">
+                     <VBox.margin>
+                        <Insets left="190.0" right="40.0" top="-35.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="34.0" prefWidth="122.0" styleClass="textInf" stylesheets="@style.css" text="Date of birthay">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker prefHeight="26.0" prefWidth="147.0" styleClass="datePicker" stylesheets="@style2.css">
+                     <VBox.margin>
+                        <Insets left="190.0" right="40.0" top="-35.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </DatePicker>
+                  <Label prefHeight="34.0" prefWidth="122.0" styleClass="textInf" stylesheets="@style.css" text="Personal Data">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <Label prefHeight="34.0" prefWidth="122.0" styleClass="textInf" stylesheets="@style.css" text="Number">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="number" prefHeight="26.0" prefWidth="449.0" styleClass="search_bar" stylesheets="@style.css">
+                     <VBox.margin>
+                        <Insets left="190.0" right="40.0" top="-35.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="34.0" prefWidth="122.0" styleClass="textInf" stylesheets="@style.css" text="Email">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="email" prefHeight="26.0" prefWidth="449.0" styleClass="search_bar" stylesheets="@style.css">
+                     <VBox.margin>
+                        <Insets left="190.0" right="40.0" top="-35.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: transparent;" styleClass="textInf" stylesheets="@style.css" text="Save All">
+                     <VBox.margin>
+                        <Insets left="200.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

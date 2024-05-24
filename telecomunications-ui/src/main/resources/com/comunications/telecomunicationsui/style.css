@@ -1,0 +1,46 @@
+.bg_image{
+    -fx-background-image: url("file:///C:/Users/ME/Documents/Telecomunicatii/telecomunications-ui/src/main/resources/img/background.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center;
+}
+.search_box{
+    -fx-background-image: url("file:///C:/Users/ME/Documents/Telecomunicatii/telecomunications-ui/src/main/resources/img/search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 35px 35px; /* dimensiunea imaginii */
+    -fx-background-position: left center; /* poziția imaginii - stânga și centru */
+}
+.top-bar{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #633fe5, #250388);
+    -fx-background-repeat: no-repeat;
+    /*-fx-background-size: 60px 50px; !* dimensiunea imaginii *!
+    -fx-background-position: 10px center; !* poziția imaginii - stânga și centru *!*/
+}
+.transparent{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+.search_bar {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-width: 0 0 1 0; /* Grosimea border-ului doar pentru partea de jos */
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-text-fill: black;
+}
+.content_box{
+    -fx-max-width: 400px;
+    -fx-max-height: 300px;
+    -fx-background-color: rgba(126, 60, 204, 0.8);
+    -fx-background-radius: 30;
+}
+.textInf{
+    -fx-text-fill: black;
+}
+/* Clasa pentru efectul de glow verde */
+.green-glow {
+    -fx-effect: dropshadow(gaussian, #00ff00, 40, 0.5, 0, 0);
+}
+
+/* Clasa pentru efectul de glow roșu */
+.red-glow {
+    -fx-effect: dropshadow(gaussian, red, 40, 0.5, 0, 0);
+}

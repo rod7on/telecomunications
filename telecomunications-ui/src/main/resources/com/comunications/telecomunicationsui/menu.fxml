@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="420.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.comunications.telecomunicationsui.Menu">
+   <children>
+      <BorderPane prefHeight="417.0" prefWidth="686.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #B368FAFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="74.0" layoutY="17.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #350068FF;" AnchorPane.bottomAnchor="34.4" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="back" mnemonicParsing="false" prefHeight="24.0" prefWidth="25.0" styleClass="backButton" stylesheets="@style2.css">
+                           <graphic>
+                              <ImageView id="backButton" fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/back.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label layoutX="534.0" layoutY="-3.0" prefHeight="17.0" prefWidth="154.0" text="FastTalking" textFill="#ffc6da">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox fx:id="menuHboxItems" layoutX="400.0" layoutY="-4.0" prefHeight="100.0" prefWidth="425.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="121.0" styleClass="menuItems" stylesheets="@style2.css" text="Home">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/home.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="121.0" styleClass="menuItems" stylesheets="@style2.css" text="WX">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/cloudy.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="profile" mnemonicParsing="false" prefHeight="35.0" prefWidth="121.0" styleClass="menuItems" stylesheets="@style2.css" text="Profile">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/profile.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="121.0" styleClass="menuItems" stylesheets="@style2.css" text="Setings">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/settings.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="MenuBack" layoutX="8.0" layoutY="34.0" styleClass="textInf" stylesheets="@style.css" text="MENU" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/menuExtins.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Menu" layoutX="8.0" layoutY="34.0" styleClass="textInf" stylesheets="@style.css" text="MENU">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/menuRestrans.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="175.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="personeImage" layoutX="-1.0" layoutY="1.0" prefHeight="338.0" prefWidth="176.0" style="-fx-background-color: transparent;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="339.0" fitWidth="175.0" layoutX="8.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/a guy.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="personeImageWomen" prefHeight="338.0" prefWidth="176.0" style="-fx-background-color: transparent;" visible="false" AnchorPane.leftAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="339.0" fitWidth="175.0" layoutX="8.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/a women.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <VBox fx:id="slider" layoutX="52.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #7900E6FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="slideBar" alignment="BASELINE_LEFT" mnemonicParsing="false" prefWidth="175.0" styleClass="slideBarItems" stylesheets="@style2.css" text="Dashboard">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/dashboard.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="slideBar2" alignment="BASELINE_LEFT" mnemonicParsing="false" prefWidth="175.0" styleClass="slideBarItems" stylesheets="@style2.css" text="Weather">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/cloudy.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="profileslideBar" alignment="BASELINE_LEFT" mnemonicParsing="false" prefWidth="175.0" styleClass="slideBarItems" stylesheets="@style2.css" text="Profile">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/profile.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="slideBar4" alignment="BASELINE_LEFT" mnemonicParsing="false" prefWidth="175.0" styleClass="slideBarItems" stylesheets="@style2.css" text="Setings">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/settings.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="Logout" alignment="BASELINE_LEFT" mnemonicParsing="false" prefWidth="175.0" styleClass="logout" stylesheets="@style2.css" text="Logout">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <VBox fx:id="contentVBox" prefHeight="200.0" prefWidth="341.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="130.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Pane fx:id="personeProfile1" prefHeight="75.0" prefWidth="274.0" style="-fx-background-radius: 20; -fx-background-color: #F1916D;">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="18.0">
+                           <image>
+                              <Image url="@../../../img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="62.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="61.0" layoutY="34.0" prefHeight="26.0" prefWidth="96.0" styleClass="search_bar" stylesheets="@style.css" text="078956324" />
+                        <Text layoutX="175.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="172.0" layoutY="34.0" prefHeight="26.0" prefWidth="85.0" styleClass="search_bar" stylesheets="@style.css" text="Ion" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="personeProfile2" prefHeight="75.0" prefWidth="274.0" style="-fx-background-radius: 20; -fx-background-color: #DA346BF7;">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="18.0">
+                           <image>
+                              <Image url="@../../../img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="62.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="61.0" layoutY="32.0" prefHeight="26.0" prefWidth="96.0" styleClass="search_bar" stylesheets="@style.css" text="078900324" />
+                        <Text layoutX="177.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="174.0" layoutY="32.0" prefHeight="26.0" prefWidth="85.0" styleClass="search_bar" stylesheets="@style.css" text="Radu" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="personeProfile3" prefHeight="75.0" prefWidth="274.0" style="-fx-background-radius: 20; -fx-background-color: #A034BAED;">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="18.0">
+                           <image>
+                              <Image url="@../../../img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="59.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="59.0" layoutY="35.0" prefHeight="26.0" prefWidth="96.0" styleClass="search_bar" stylesheets="@style.css" text="078900324" />
+                        <Text layoutX="173.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuame">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="170.0" layoutY="35.0" prefHeight="26.0" prefWidth="85.0" styleClass="search_bar" stylesheets="@style.css" text="Andrei" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane fx:id="personeProfile4" prefHeight="75.0" prefWidth="274.0" style="-fx-background-radius: 20; -fx-background-color: rgba(194, 126, 255, 0.91);">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="18.0">
+                           <image>
+                              <Image url="@../../../img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="58.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="58.0" layoutY="33.0" prefHeight="26.0" prefWidth="96.0" styleClass="search_bar" stylesheets="@style.css" text="078900324" />
+                        <Text layoutX="173.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="172.0" layoutY="33.0" prefHeight="26.0" prefWidth="85.0" styleClass="search_bar" stylesheets="@style.css" text="Marius" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <VBox fx:id="deleteSaveButtons" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="-110.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Button fx:id="delete1" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #DA0000FF;" text="Delete" visible="false">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="save1" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #00A86B;" text="Save" visible="false">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="delete2" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #DA0000FF;" text="Delete" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="21.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="save2" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #00A86B;" text="Save" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="delete3" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #DA0000FF;" text="Delete" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="save3" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #00A86B;" text="Save" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="delete4" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #DA0000FF;" text="Delete" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="save4" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #00A86B;" text="Save" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
