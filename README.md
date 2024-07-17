@@ -1,4 +1,4 @@
-#TTittle - FastTalk
+#Tittle - FastTalk
 
 ##
 This project is a graphical user interface (GUI) application developed using JavaFX.
